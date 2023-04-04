@@ -21,13 +21,14 @@ fun component(text: String): Component {
 
 fun smallCaps(string: String): String {
     val length = string.length
-    val smallCaps = Formatter(StringBuilder(length))
+    val smallCaps = StringBuilder(length)
     for (i in 0 until length) {
         val c = string[i]
         if (c in 'A'..'Z' && c != 'X') {
-            smallCaps.format("%c", Character.codePointOf("LATIN LETTER SMALL CAPITAL $c"))
+            val codePoint = c.code + 0x1D00 - 0x41
+            smallCaps.appendCodePoint(codePoint)
         } else {
-            smallCaps.format("%c", c)
+            smallCaps.append(c)
         }
     }
     return smallCaps.toString()
