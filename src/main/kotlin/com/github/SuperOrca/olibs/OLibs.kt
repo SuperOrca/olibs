@@ -1,4 +1,4 @@
-package io.github.superorca.olibs
+package com.github.SuperOrca.olibs
 
 import org.bukkit.plugin.java.JavaPlugin
 
