@@ -36,13 +36,13 @@ fun smallCaps(string: String): String {
 fun compact(number: Long): String {
     if (number < 1000L) return "" + number
     val exp = (ln(number.toDouble()) / ln(1000.0)).toInt()
-    return "%.1f%s".formatted(number / 1000.0.pow(exp.toDouble()), endings[exp - 1])
+    return "%.1f%s".format(number / 1000.0.pow(exp.toDouble()), endings[exp - 1])
 }
 
 fun compact(number: Double): String {
-    if (number < 1000.0) return "%.0f".formatted(number)
+    if (number < 1000.0) return "%.0f".format(number)
     val exp = (ln(number) / ln(1000.0)).toInt()
-    return "%.1f%s".formatted(number / 1000.0.pow(exp.toDouble()), endings[exp - 1])
+    return "%.1f%s".format(number / 1000.0.pow(exp.toDouble()), endings[exp - 1])
 }
 
 fun compact(number: Number?): String? {
