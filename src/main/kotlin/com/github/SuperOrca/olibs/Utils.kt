@@ -14,24 +14,29 @@ private val serializer = MiniMessage.builder()
     .postProcessor { component -> component.decoration(TextDecoration.ITALIC, false) }
     .build()
 private val endings = arrayOf("k", "M", "B", "T", "Q", "QT", "S", "SP", "O")
+private val smallCapitalMap = mapOf(
+    'a' to '\u1d00', 'b' to '\u0299', 'c' to '\u1d04', 'd' to '\u1d05', 'e' to '\u1d07',
+    'f' to '\ua730', 'g' to '\u0262', 'h' to '\u029c', 'i' to '\u026a', 'j' to '\u1d0a',
+    'k' to '\u1d0b', 'l' to '\u029f', 'm' to '\u1d0d', 'n' to '\u0274', 'o' to '\u1d0f',
+    'p' to '\u1d18', 'q' to '\ua731', 'r' to '\u0280', 's' to '\ua731', 't' to '\u1d1b',
+    'u' to '\u1d1c', 'v' to '\u1d20', 'w' to '\u1d21', 'x' to '\u1d22', 'y' to '\u028f',
+    'z' to '\u1d23'
+)
 
 fun component(text: String): Component {
     return serializer.deserialize(text)
 }
 
-fun smallCaps(string: String): String {
-    val length = string.length
-    val smallCaps = StringBuilder(length)
-    for (i in 0 until length) {
-        val c = string[i]
-        if (c in 'A'..'Z' && c != 'X') {
-            val codePoint = c.code + 0x1D00 - 0x41
-            smallCaps.appendCodePoint(codePoint)
+fun smallCaps(input: String): String {
+    val outputBuilder = StringBuilder()
+    for (char in input) {
+        if (char in 'a'..'z') {
+            outputBuilder.append(smallCapitalMap[char])
         } else {
-            smallCaps.append(c)
+            outputBuilder.append(char)
         }
     }
-    return smallCaps.toString()
+    return outputBuilder.toString()
 }
 
 fun compact(number: Long): String {
