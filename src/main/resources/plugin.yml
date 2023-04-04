@@ -1,0 +1,7 @@
+name: OLibs
+version: 1.0.0
+main: io.github.superorca.olibs.OLibs
+load: STARTUP
+api-version: 1.19
+authors: [SuperOrca, others]
+description: Collection of libs used by my plugins
