@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>olibs</artifactId>
-    <groupId>io.github.superorca</groupId>
-    <version>1.1.0</version>
+    <groupId>com.github.superorca</groupId>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
 
     <name>OLibs</name>
