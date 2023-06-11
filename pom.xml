@@ -6,7 +6,7 @@
 
     <artifactId>olibs</artifactId>
     <groupId>com.github.superorca</groupId>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
     <packaging>jar</packaging>
 
     <name>OLibs</name>
@@ -115,7 +115,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.19.4-R0.1-SNAPSHOT</version>
+            <version>1.20-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -127,13 +127,13 @@
         <dependency>
             <groupId>fr.mrmicky</groupId>
             <artifactId>fastboard</artifactId>
-            <version>1.2.1</version>
+            <version>2.0.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>de.tr7zw</groupId>
             <artifactId>item-nbt-api</artifactId>
-            <version>2.11.2</version>
+            <version>2.11.3</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -143,21 +143,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>0.10.2</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>32.0.0-jre</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
