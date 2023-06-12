@@ -6,7 +6,7 @@
 
     <artifactId>olibs</artifactId>
     <groupId>com.github.superorca</groupId>
-    <version>1.5.1</version>
+    <version>1.5.2</version>
     <packaging>jar</packaging>
 
     <name>OLibs</name>
@@ -74,12 +74,12 @@
                             <shadedPattern>${project.groupId}.nbtapi</shadedPattern>
                         </relocation>
                         <relocation>
-                            <pattern>co.aikar.commands</pattern>
-                            <shadedPattern>${project.groupId}.acf</shadedPattern>
+                            <pattern>com.github.Revxrsal.Lamp.common</pattern>
+                            <shadedPattern>${project.groupId}.common</shadedPattern>
                         </relocation>
                         <relocation>
-                            <pattern>co.aikar.locales</pattern>
-                            <shadedPattern>${project.groupId}.locales</shadedPattern>
+                            <pattern>com.github.Revxrsal.Lamp.bukkit</pattern>
+                            <shadedPattern>${project.groupId}.bukkit</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -104,10 +104,6 @@
             <id>codemc-repo</id>
             <url>https://repo.codemc.io/repository/maven-public/</url>
             <layout>default</layout>
-        </repository>
-        <repository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/groups/aikar/</url>
         </repository>
     </repositories>
 
@@ -137,15 +133,21 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>co.aikar</groupId>
-            <artifactId>acf-paper</artifactId>
-            <version>0.5.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.Revxrsal.Lamp</groupId>
+            <artifactId>common</artifactId>
+            <version>3.1.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.Revxrsal.Lamp</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>3.1.5</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
