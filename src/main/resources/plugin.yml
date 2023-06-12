@@ -1,5 +1,5 @@
 name: OLibs
-version: 1.5.3
+version: 1.5.4
 main: com.github.SuperOrca.olibs.OLibs
 load: STARTUP
 api-version: '1.20'
