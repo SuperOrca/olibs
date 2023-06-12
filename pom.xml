@@ -6,7 +6,7 @@
 
     <artifactId>olibs</artifactId>
     <groupId>com.github.superorca</groupId>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <packaging>jar</packaging>
 
     <name>OLibs</name>
@@ -58,10 +58,6 @@
                 <configuration>
                     <relocations>
                         <relocation>
-                            <pattern>de.erethon.headlib</pattern>
-                            <shadedPattern>${project.groupId}.headlib</shadedPattern>
-                        </relocation>
-                        <relocation>
                             <pattern>fr.mrmicky.fastboard</pattern>
                             <shadedPattern>${project.groupId}.fastboard</shadedPattern>
                         </relocation>
@@ -74,12 +70,16 @@
                             <shadedPattern>${project.groupId}.nbtapi</shadedPattern>
                         </relocation>
                         <relocation>
-                            <pattern>com.github.Revxrsal.Lamp.common</pattern>
-                            <shadedPattern>${project.groupId}.common</shadedPattern>
+                            <pattern>de.tr7ze.annotations</pattern>
+                            <shadedPattern>${project.groupId}.annotations</shadedPattern>
                         </relocation>
                         <relocation>
-                            <pattern>com.github.Revxrsal.Lamp.bukkit</pattern>
-                            <shadedPattern>${project.groupId}.bukkit</shadedPattern>
+                            <pattern>revxrsal.commands</pattern>
+                            <shadedPattern>${project.groupId}.commands</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.google.gson</pattern>
+                            <shadedPattern>${project.groupId}.gson</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
