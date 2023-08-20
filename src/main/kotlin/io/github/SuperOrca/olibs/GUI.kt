@@ -1,4 +1,4 @@
-package com.github.SuperOrca.olibs
+package io.github.superorca.olibs
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
