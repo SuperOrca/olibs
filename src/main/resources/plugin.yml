@@ -1,6 +1,6 @@
 name: OLibs
-version: 1.6.1
-main: io.github.superorca.olibs.OLibs
+version: 1.6.2
+main: com.github.SuperOrca.olibs.OLibs
 api-version: '1.20'
 authors: [SuperOrca, others]
 description: Collection of libs used by my plugins
