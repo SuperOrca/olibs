@@ -6,7 +6,7 @@
 
     <artifactId>olibs</artifactId>
     <groupId>com.github.SuperOrca</groupId>
-    <version>1.7.3</version>
+    <version>1.8.0</version>
     <packaging>jar</packaging>
 
     <name>OLibs</name>
