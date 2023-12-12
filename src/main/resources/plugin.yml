@@ -1,5 +1,5 @@
 name: OLibs
-version: 1.7.3
+version: 1.8.0
 main: com.github.SuperOrca.olibs.OLibs
 api-version: '1.20'
 authors: [SuperOrca, others]
